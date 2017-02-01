@@ -1,71 +1,162 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>indy live!</title>
+  <title>Agility Unleashed</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/form_global.css" /> 
+  <link rel="stylesheet" href="form_global.css"/> 
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-<div id="topbar">
-    <ul>
-        <li> <a href="http://www.google.com"> Concerts </a > </li >
-        <li> <a href="http://www.google.com"> Venues </a > </li >
-        <li> <a href="http://www.google.com"> Meetups </a > </li > 
-        <li> <a href="http://www.google.com"> Contact</a> </li>
-    </ul >
-</div >
+<header class="header-fixed">
 
-<div id="title">
-    <h1>indy live!</h1>
-</div>
+	<div class="header-limiter">
 
-<form method="post" action="">
+		<h1><a href="#">Agility<span>Unleashed</span></a></h1>
 
-    <label for="firstName">First Name</label><br/>
-    <input type="text" id="firstName" name="first_name" placeholder="Example: Joe" /><br/><br/>
+		<nav>
+			<a href="#">Home</a>
+			<a href="#" class="selected">About</a>
+			<a href="#">Schedule</a>
+			<a href="#">Locations</a>
+			<a href="#">Pricing</a>
+			<a href="#">Contact</a>
+		</nav>
 
-    <hr/>
+	</div>
 
-    <input type="radio" id="greenShirt" name="options" value="Green Shirt" />
-    <label for="greenShirt">Green Shirt</label>
-    <br/><br/>
+</header>
 
-    <input type="radio" id="purpleShirt" name="options" value="Purple Shirt" />
-    <label for="purpleShirt">Purple Shirt</label>
-    <br/><br/>
+<img src = "images/bordercolliejump.jpg">
 
-    <input type="radio" id="blueShirt" name="options" value="Blue Shirt" />
-    <label for="blueShirt">Blue Shirt</label>
-    <br/><br/>
+<section>
 
-    <hr/>
+    <h1>Agility Unleashed Competition 2017- sign up here!</h1>
 
-    <input type="checkbox" id="wantsNewsletter" name="wants_newsletter" value="yes" />
-    <label for="wantsNewsletter">Sign Up For Newsletter</label><br><br>
+    <form method="post" action="">
+        <input type="hidden" name="product" value="Agility Unleashed 2017 fee" />
+        <label for="firstName">First Name</label><br/>
+        <input type="text" id="firstName" name="first_name"/><br/><br/>
+        <label for "lastName">Last Name</label><br/>
+        <input type="text" id="firstName" name="first_name"/><br/><br/>
+        <label for="address">Address</label><br/>
+        <input type="text" id="address" name="address"/><br/><br/>
+        <label for="city">City</label><br/>
+        <input type="text" id="city" name="city"/><br/><br/>
+        <label for="state">State</label><br/>
+            <select id="state" name="state">
+                <option value="WF">Winterfell</option>
+                <option value="RL">Riverlands</option>
+                <option value="VL">The Vale</option>
+                <option value-"CR">Casterly Rock</option>
+                <option value="IN">Indiana</option>
+                <option value="IL">Illinois</option>
+                <option value="MI">Michigan</option>
+                <option value="OH">Ohio</option>
+            </select><br/><br/>
+        <label for="zip">Zip Code</label><br/>
+        <input type="text" id="zip" name="zip"/><br/><br/>
 
+        <hr/>
 
-    <hr/>
+        <label for="dogName">Dog Name</label><br/>
+        <input type="text" id="dogName" name="dog_name"/><br/><br/>
+        <label for="breed">Breed</label><br/>
+        <input type="text" id="breed" name="breed"/><br/><br/>
+        <label for="daysCompeting"># Days Competing</label><br/>
+        <input type="number" id="daysCompeting" name="days_competing" min="1" max="3"/><br/><br/>
+        <label for="size">Size</label><br/>
+            <select id="size" name="size">
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option><br/><br/>
 
-    <label for="state">State</label><br/>
-     <select id="state" name="state">
-        <option value="CA">Canada</option>
-        <option value="MX">Mexico</option>
-        <option value="US">United States</option>
-    </select>
+        <hr/>
 
-    <hr/>
+        <input type="checkbox" id="wantsNewsletter" name="wants_newsletter" value="yes" />
+        <label for="wantsNewsletter">Can we send you weekly updates?</label><br><br>
 
-    <label for="comment">Comments</label><br/>
-    <textarea name="comment"></textarea>
+        <hr/>
 
-    <hr/>
+        <label for="comment">Please let us know if your or your furry friend have any specific requirements or concerns. We will do our best to accomodate you!</label><br/>
+        <textarea name="comment"></textarea>
 
-    <button type="submit">Send</button>
+        <hr/>
 
-</form>
+        <button type="submit">Submit and continue to payment</button>
+
+    </form>
+
+</section>
+
+<footer>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Agility<span>Unleashed</span></h3>
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					·
+					<a href="#">About</a>
+					·
+					<a href="#">Schedule</a>
+					·
+					<a href="#">Locations</a>
+					·
+					<a href="#">Pricing</a>
+					·
+					<a href="#">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Agility Ulneashed &copy; 2017</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>317 Nights Watch Way</span> Castle Black, Westeros</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1 555 123456</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@agilityunleashed.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Agility Unleashed is a not for profit event organizer promoting healthy, happy, dogs (and humans).
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-meetup"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+</footer>
 
 </body>
 
